@@ -62,7 +62,7 @@ class DetailViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: self.detailCollectionView.frame.width, height: self.detailCollectionView.frame.height)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
         layout.minimumLineSpacing = 0.0
         layout.minimumInteritemSpacing = 0.0
         self.detailCollectionView.collectionViewLayout = layout

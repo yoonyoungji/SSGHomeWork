@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         //tableview Delegate/datasource
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
+        self.listTableView.rowHeight = UITableViewAutomaticDimension
     }
     
     func initView(){
@@ -82,9 +83,7 @@ class ViewController: UIViewController {
                         self.itemList = tempitemList
                     }
                     
-                    DispatchQueue.main.async {
-                        self.listTableView.reloadData()
-                    }
+                      self.listTableView.reloadData()
                 }
             }
         }
@@ -102,11 +101,6 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! mainTableViewCell
         cell.configureCell(titleData: self.itemList[indexPath.row].itemTitle)
         return cell
-    }
-    
-    //테이블뷰 셀 높이 지정
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
     }
 
     //셀 선택 했을 때 액션
