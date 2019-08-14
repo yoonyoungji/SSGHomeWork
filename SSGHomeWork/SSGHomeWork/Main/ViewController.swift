@@ -45,7 +45,8 @@ class ViewController: UIViewController {
         //tableview Delegate/datasource
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
-        self.listTableView.rowHeight = UITableViewAutomaticDimension
+        self.listTableView.rowHeight = 44
+        self.listTableView.estimatedRowHeight = 44
     }
     
     func initView(){

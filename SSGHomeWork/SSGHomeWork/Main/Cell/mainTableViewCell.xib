@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,28 +15,25 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" rowHeight="44" id="KGk-i7-Jjw" customClass="mainTableViewCell" customModule="SSGHomeWork" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-k6-vkK">
-                        <rect key="frame" x="20" y="12" width="280" height="20.5"/>
-                        <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="Lis-VY-ID4"/>
-                        </constraints>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-k6-vkK">
+                        <rect key="frame" x="20" y="7" width="280" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="t3l-k6-vkK" secondAttribute="bottom" constant="0.5" id="Le5-6B-bjf"/>
+                    <constraint firstItem="t3l-k6-vkK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="4K0-YX-bQ1"/>
+                    <constraint firstAttribute="bottom" secondItem="t3l-k6-vkK" secondAttribute="bottom" constant="6.5" id="TAg-I5-b46"/>
                     <constraint firstItem="t3l-k6-vkK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pGJ-Nj-C8n"/>
-                    <constraint firstItem="t3l-k6-vkK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="uLj-dR-BEi"/>
                     <constraint firstAttribute="trailing" secondItem="t3l-k6-vkK" secondAttribute="trailing" constant="20" id="vJm-fd-TMd"/>
-                    <constraint firstItem="t3l-k6-vkK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xRT-Ju-ArZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="HSL-Ti-DqO"/>
             <connections>
                 <outlet property="mainTitleLabel" destination="t3l-k6-vkK" id="kh1-7R-Nh5"/>
             </connections>

@@ -58,15 +58,6 @@ class DetailViewController: UIViewController {
         self.detailCollectionView.register(UINib(nibName: "DetailCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
         self.detailCollectionView.delegate = self
         self.detailCollectionView.dataSource = self
-        
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
-        layout.minimumLineSpacing = 0.0
-        layout.minimumInteritemSpacing = 0.0
-        self.detailCollectionView.collectionViewLayout = layout
-
     }
     
     //타이머 시작
@@ -94,7 +85,10 @@ class DetailViewController: UIViewController {
 }
 
 //MARK:- UICollectionView Delegate/Datasource
-extension DetailViewController : UICollectionViewDelegate, UICollectionViewDataSource{
+extension DetailViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
     //리스트 아이템 갯수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.detailData.count
