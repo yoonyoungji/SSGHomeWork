@@ -13,9 +13,20 @@
 		7F394BAD230431E800FB7B85 /* SSGHomeWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F394BAB230431E800FB7B85 /* SSGHomeWork.xcdatamodeld */; };
 		7F394BAF230431EA00FB7B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F394BAE230431EA00FB7B85 /* Assets.xcassets */; };
 		7F394BB2230431EA00FB7B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F394BB0230431EA00FB7B85 /* LaunchScreen.storyboard */; };
+		7F394BBE2304361F00FB7B85 /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F394BBC2304361F00FB7B85 /* mainTableViewCell.swift */; };
+		7F394BBF2304361F00FB7B85 /* mainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F394BBD2304361F00FB7B85 /* mainTableViewCell.xib */; };
+		7F394BC2230436FC00FB7B85 /* ListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F394BC1230436FC00FB7B85 /* ListDataModel.swift */; };
+		7F394BCE230456F900FB7B85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F394BCC230456F900FB7B85 /* DetailViewController.swift */; };
+		7F394BCF230456F900FB7B85 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F394BCD230456F900FB7B85 /* DetailViewController.xib */; };
+		7F394BD22304580D00FB7B85 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F394BD02304580D00FB7B85 /* DetailCollectionViewCell.swift */; };
+		7F394BD32304580D00FB7B85 /* DetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F394BD12304580D00FB7B85 /* DetailCollectionViewCell.xib */; };
+		7F394BD823045F2D00FB7B85 /* DetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F394BD623045F2D00FB7B85 /* DetailWebViewController.swift */; };
+		7F394BD923045F2D00FB7B85 /* DetailWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F394BD723045F2D00FB7B85 /* DetailWebViewController.xib */; };
+		C9FBCC4AD6C66C2DB778A3A7 /* Pods_SSGHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7652CA79A8200BFCA84B2DA /* Pods_SSGHomeWork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F9BFF380774F3569F69EE70 /* Pods-SSGHomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSGHomeWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSGHomeWork/Pods-SSGHomeWork.release.xcconfig"; sourceTree = "<group>"; };
 		7F394BA1230431E800FB7B85 /* SSGHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSGHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F394BA4230431E800FB7B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F394BA6230431E800FB7B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,17 @@
 		7F394BAE230431EA00FB7B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F394BB1230431EA00FB7B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F394BB3230431EA00FB7B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F394BBC2304361F00FB7B85 /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
+		7F394BBD2304361F00FB7B85 /* mainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainTableViewCell.xib; sourceTree = "<group>"; };
+		7F394BC1230436FC00FB7B85 /* ListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataModel.swift; sourceTree = "<group>"; };
+		7F394BCC230456F900FB7B85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7F394BCD230456F900FB7B85 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		7F394BD02304580D00FB7B85 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F394BD12304580D00FB7B85 /* DetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F394BD623045F2D00FB7B85 /* DetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebViewController.swift; sourceTree = "<group>"; };
+		7F394BD723045F2D00FB7B85 /* DetailWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWebViewController.xib; sourceTree = "<group>"; };
+		A9A18C4F6667586A28E13A7E /* Pods-SSGHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSGHomeWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSGHomeWork/Pods-SSGHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
+		F7652CA79A8200BFCA84B2DA /* Pods_SSGHomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSGHomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FBCC4AD6C66C2DB778A3A7 /* Pods_SSGHomeWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7144A50B64D9E3254157DCF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7652CA79A8200BFCA84B2DA /* Pods_SSGHomeWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7687020C32FDD7C267099CED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9A18C4F6667586A28E13A7E /* Pods-SSGHomeWork.debug.xcconfig */,
+				3F9BFF380774F3569F69EE70 /* Pods-SSGHomeWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7F394B98230431E800FB7B85 = {
 			isa = PBXGroup;
 			children = (
 				7F394BA3230431E800FB7B85 /* SSGHomeWork */,
 				7F394BA2230431E800FB7B85 /* Products */,
+				7687020C32FDD7C267099CED /* Pods */,
+				7144A50B64D9E3254157DCF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,72 @@
 		7F394BA3230431E800FB7B85 /* SSGHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				7F394BC0230436ED00FB7B85 /* Model */,
+				7F394BBA230435F500FB7B85 /* Detail */,
+				7F394BB9230435E100FB7B85 /* Main */,
 				7F394BA4230431E800FB7B85 /* AppDelegate.swift */,
-				7F394BA6230431E800FB7B85 /* ViewController.swift */,
-				7F394BA8230431E800FB7B85 /* Main.storyboard */,
 				7F394BAE230431EA00FB7B85 /* Assets.xcassets */,
 				7F394BB0230431EA00FB7B85 /* LaunchScreen.storyboard */,
 				7F394BB3230431EA00FB7B85 /* Info.plist */,
 				7F394BAB230431E800FB7B85 /* SSGHomeWork.xcdatamodeld */,
 			);
 			path = SSGHomeWork;
+			sourceTree = "<group>";
+		};
+		7F394BB9230435E100FB7B85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F394BBB230435FF00FB7B85 /* Cell */,
+				7F394BA6230431E800FB7B85 /* ViewController.swift */,
+				7F394BA8230431E800FB7B85 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F394BBA230435F500FB7B85 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7F394BD523045F1B00FB7B85 /* SubView */,
+				7F394BD4230459F300FB7B85 /* Cell */,
+				7F394BCC230456F900FB7B85 /* DetailViewController.swift */,
+				7F394BCD230456F900FB7B85 /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7F394BBB230435FF00FB7B85 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F394BBC2304361F00FB7B85 /* mainTableViewCell.swift */,
+				7F394BBD2304361F00FB7B85 /* mainTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7F394BC0230436ED00FB7B85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F394BC1230436FC00FB7B85 /* ListDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F394BD4230459F300FB7B85 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F394BD02304580D00FB7B85 /* DetailCollectionViewCell.swift */,
+				7F394BD12304580D00FB7B85 /* DetailCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7F394BD523045F1B00FB7B85 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				7F394BD623045F2D00FB7B85 /* DetailWebViewController.swift */,
+				7F394BD723045F2D00FB7B85 /* DetailWebViewController.xib */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F394BB6230431EA00FB7B85 /* Build configuration list for PBXNativeTarget "SSGHomeWork" */;
 			buildPhases = (
+				2A7220E8D3D0941A933F5DC9 /* [CP] Check Pods Manifest.lock */,
 				7F394B9D230431E800FB7B85 /* Sources */,
 				7F394B9E230431E800FB7B85 /* Frameworks */,
 				7F394B9F230431E800FB7B85 /* Resources */,
+				E0D0AA56EEC7373097B355A4 /* [CP] Embed Pods Frameworks */,
+				C51B56045852CDB763DABBFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,21 +228,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F394BB2230431EA00FB7B85 /* LaunchScreen.storyboard in Resources */,
+				7F394BCF230456F900FB7B85 /* DetailViewController.xib in Resources */,
 				7F394BAF230431EA00FB7B85 /* Assets.xcassets in Resources */,
+				7F394BD32304580D00FB7B85 /* DetailCollectionViewCell.xib in Resources */,
+				7F394BBF2304361F00FB7B85 /* mainTableViewCell.xib in Resources */,
+				7F394BD923045F2D00FB7B85 /* DetailWebViewController.xib in Resources */,
 				7F394BAA230431E800FB7B85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A7220E8D3D0941A933F5DC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSGHomeWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51B56045852CDB763DABBFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSGHomeWork/Pods-SSGHomeWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D0AA56EEC7373097B355A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SSGHomeWork/Pods-SSGHomeWork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSGHomeWork/Pods-SSGHomeWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F394B9D230431E800FB7B85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F394BD823045F2D00FB7B85 /* DetailWebViewController.swift in Sources */,
+				7F394BD22304580D00FB7B85 /* DetailCollectionViewCell.swift in Sources */,
 				7F394BA7230431E800FB7B85 /* ViewController.swift in Sources */,
 				7F394BA5230431E800FB7B85 /* AppDelegate.swift in Sources */,
+				7F394BBE2304361F00FB7B85 /* mainTableViewCell.swift in Sources */,
+				7F394BC2230436FC00FB7B85 /* ListDataModel.swift in Sources */,
 				7F394BAD230431E800FB7B85 /* SSGHomeWork.xcdatamodeld in Sources */,
+				7F394BCE230456F900FB7B85 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +447,7 @@
 		};
 		7F394BB7230431EA00FB7B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A18C4F6667586A28E13A7E /* Pods-SSGHomeWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +466,7 @@
 		};
 		7F394BB8230431EA00FB7B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9BFF380774F3569F69EE70 /* Pods-SSGHomeWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
