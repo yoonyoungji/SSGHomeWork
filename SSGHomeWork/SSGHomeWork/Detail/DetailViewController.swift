@@ -75,10 +75,7 @@ class DetailViewController: UIViewController {
         //마지막 페이지 지나고 나면 첫번째 페이지로이동
         else{
             self.currentIndexPath = IndexPath(item: 0, section: 0)
-            UIView.animate(withDuration: 0.5, animations: {
-            
-                self.detailCollectionView.scrollToItem(at: self.currentIndexPath, at: .centeredHorizontally, animated: false)
-            })
+            self.detailCollectionView.scrollToItem(at: self.currentIndexPath, at: .centeredHorizontally, animated: false)
         }
     }
 
@@ -116,21 +113,18 @@ extension DetailViewController : UICollectionViewDelegate, UICollectionViewDataS
 
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        //마지막 데이터 보다 이후로 스크롤 했을 때
-//        if (scrollView.contentOffset.x > (scrollView.contentSize.width - scrollView.frame.size.width)) {
-//
-//            self.currentIndexPath = IndexPath(item: 0, section: 0)
-//            UIView.animate(withDuration: 0.5, animations: {
-//
-//                self.detailCollectionView.scrollToItem(at: self.currentIndexPath, at: .centeredHorizontally, animated: false)
-//            })
-//        }
-//
-//        //첫번째데이터 보다 이전으로 스크롤했을 때
-//        if (scrollView.contentOffset.x < 0){
-//            self.currentIndexPath = IndexPath(item: self.detailData.count - 1, section: 0)
-//            self.detailCollectionView.scrollToItem(at: self.currentIndexPath, at: .centeredHorizontally, animated: false)
-//        }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+            //마지막 데이터 보다 이후로 스크롤 했을 때
+            if (scrollView.contentOffset.x > (scrollView.contentSize.width - scrollView.frame.size.width)) {
+    
+                self.currentIndexPath = IndexPath(item: 0, section: 0)
+                 self.detailCollectionView.scrollToItem(at: self.currentIndexPath, at: .centeredHorizontally, animated: false)
+            }
+    
+            //첫번째데이터 보다 이전으로 스크롤했을 때
+            if (scrollView.contentOffset.x <= 0){
+                self.currentIndexPath = IndexPath(item: self.detailData.count - 1, section: 0)
+                self.detailCollectionView.scrollToItem(at: self.currentIndexPath, at: .centeredHorizontally, animated: false)
+            }
     }
 }

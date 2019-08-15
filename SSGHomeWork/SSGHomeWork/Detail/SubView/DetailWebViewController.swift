@@ -47,7 +47,6 @@ class DetailWebViewController: UIViewController, WKUIDelegate, WKNavigationDeleg
         //웹킷뷰 크기 조절을 위해 추가
         self.wkWebView.translatesAutoresizingMaskIntoConstraints = false
         self.wkWebView.edges([.left, .right, .top, .bottom], to: self.containerView, offset: .zero)
-        self.wkWebView.size(width: self.containerView.frame.width, height: self.containerView.frame.height)
     }
     
     func initializeObject(){
@@ -63,17 +62,9 @@ class DetailWebViewController: UIViewController, WKUIDelegate, WKNavigationDeleg
         activityIndicator.isHidden = true
     }
 }
-// 웹킷뷰 위치/사이즈 조정을 위해 필요한 Constraint함수들
+// 웹킷뷰 위치/사이즈 조정을 위해 필요한 Constraint함수
 extension UIView {
- 
-    func size(width: CGFloat, height: CGFloat) {
-        NSLayoutConstraint.activate([
-            self.widthAnchor.constraint(equalToConstant: width),
-            self.heightAnchor.constraint(equalToConstant: height)
-            ])
-    }
-    
-    
+
     func edges(_ edges: UIRectEdge, to view: UIView, offset: UIEdgeInsets) {
         if edges.contains(.top) || edges.contains(.all) {
             self.topAnchor.constraint(equalTo: view.topAnchor, constant: offset.top).isActive = true
